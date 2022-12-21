@@ -58,10 +58,11 @@ function drawScene(gl, programInfo, buffers, texture, cubeRotation, Z) {
         [1, 0, 0]
     ); // axis to rotate around (X)
 
+
+    //for lightning
     const normalMatrix = mat4.create();
     mat4.invert(normalMatrix, modelViewMatrix);
     mat4.transpose(normalMatrix, normalMatrix);
-
 
 
 
